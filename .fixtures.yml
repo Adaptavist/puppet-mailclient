@@ -3,7 +3,7 @@ fixtures:
     stdlib:
       repo: "https://github.com/Adaptavist/puppet-stdlib"
     mailserver:
-      repo: "ssh://git@stash.adaptavist.com:7999/pup/puppet-mailserver.git"
+      repo: "https://github.com/Adaptavist/puppet-mailserver.git"
     postfix:
       repo: 'https://github.com/Adaptavist/puppet-postfix'
     haproxy:
