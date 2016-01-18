@@ -1,4 +1,5 @@
 # MailClient Module
+[![Build Status](https://travis-ci.org/Adaptavist/puppet-mailclient.svg?branch=master)](https://travis-ci.org/Adaptavist/puppet-mailclient)
 
 ## Overview
 
