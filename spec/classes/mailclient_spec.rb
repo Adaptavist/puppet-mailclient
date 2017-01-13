@@ -26,7 +26,7 @@ describe 'mailclient', :type => 'class' do
   context "Should setup mailsetver class and mail fwd with default params" do
   
     it do
-      should contain_mailclient__root_mail_forwarding
+      should contain_class('mailclient::root_mail_forwarding')
 
       should contain_class('mailserver').with(
             'type' => 'relay',
@@ -47,7 +47,7 @@ describe 'mailclient', :type => 'class' do
     let(:params) { {:relay => false} }
   
     it do
-      should contain_mailclient__root_mail_forwarding
+      should contain_class('mailclient::root_mail_forwarding')
 
       should_not contain_class('mailserver')
     end
@@ -66,7 +66,7 @@ describe 'mailclient', :type => 'class' do
       :relay_auth_hosts => relay_auth_hosts,
     } }
     it do
-      should contain_mailclient__root_mail_forwarding
+      should contain_class('mailclient::root_mail_forwarding')
 
       should contain_class('mailserver').with(
             'type' => 'relay',

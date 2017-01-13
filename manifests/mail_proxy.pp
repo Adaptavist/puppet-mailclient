@@ -15,7 +15,7 @@ class mailclient::mail_proxy(
       $proxy_forward_address != undef and
       $proxy_forward_port != undef {
         class { 'haproxy':
-            template => $haproxy_template,
+            template => $::haproxy_template,
             options  => {
                 'listen_address'  => $proxy_listen_address,
                 'listen_port'     => $proxy_listen_port,

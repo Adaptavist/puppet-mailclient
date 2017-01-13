@@ -10,8 +10,8 @@ defaults
     timeout server 1h
     mode tcp
 
-listen imap <%= options['listen_address'] %>:<%= options['listen_port'] %>
+listen imap <%= @options['listen_address'] %>:<%= @options['listen_port'] %>
     log global
     mode tcp
     timeout client 1h
-    server localhost-dovecot-imap <%= options['forward_address'] %>:<%= options['forward_port'] %> check port <%= options['forward_port'] %>
+    server localhost-dovecot-imap <%= @options['forward_address'] %>:<%= @options['forward_port'] %> check port <%= @options['forward_port'] %>

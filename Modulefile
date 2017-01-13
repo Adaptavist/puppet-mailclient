@@ -1,5 +1,5 @@
 name 'adaptavist-mailclient'
-version '0.1.8'
+version '1.0.0'
 source 'https://github.com/Adaptavist/puppet-mailclient.git'
 author 'adaptavist'
 #license 'apache2'

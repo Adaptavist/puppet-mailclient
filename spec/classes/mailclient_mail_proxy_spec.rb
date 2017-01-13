@@ -21,6 +21,9 @@ describe 'mailclient::mail_proxy', :type => 'class' do
         :proxy_forward_address => proxy_forward_address,
         :proxy_forward_port    => proxy_forward_port,
       }}
+    let(:facts) {{
+      :haproxy_template => haproxy_template
+    }}
     it do
       should contain_class('haproxy').with(
         'template' => haproxy_template,
